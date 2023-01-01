@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "e5ba4943-7263-4a4e-b42e-6278ca37bb62",
+		"name": "HoverflyExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11636960"
+	},
+	"item": [
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": \"7dc2819f-732d-4e91-9528-c28a897ade8b\",\n    \"postCode\": \"SL6\",\n    \"items\": [\n        {\n            \"productId\": \"7e983265-c7c7-4506-9ff1-c53b8ca5e0e8\",\n            \"orderQuantity\": 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
