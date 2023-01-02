@@ -1,0 +1,87 @@
+{
+	"data": {
+		"pairs": [
+			{
+				"request": {
+					"path": [
+						{
+							"matcher": "exact",
+							"value": "/driver/SL6"
+						}
+					],
+					"method": [
+						{
+							"matcher": "exact",
+							"value": "GET"
+						}
+					],
+					"destination": [
+						{
+							"matcher": "exact",
+							"value": "localhost:8082"
+						}
+					],
+					"scheme": [
+						{
+							"matcher": "exact",
+							"value": "http"
+						}
+					],
+					"body": [
+						{
+							"matcher": "exact",
+							"value": ""
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"body": "{\"driverId\":\"01bec8a3-4119-43cb-9a81-f1131dcbb632\",\"driverName\":\"John Doe\",\"rating\":4.6}",
+					"encodedBody": false,
+					"headers": {
+						"Cache-Control": [
+							"no-cache, no-store, max-age=0, must-revalidate"
+						],
+						"Content-Length": [
+							"88"
+						],
+						"Content-Type": [
+							"application/json;charset=UTF-8"
+						],
+						"Expires": [
+							"0"
+						],
+						"Hoverfly": [
+							"Was-Here"
+						],
+						"Pragma": [
+							"no-cache"
+						],
+						"Referrer-Policy": [
+							"no-referrer"
+						],
+						"X-Content-Type-Options": [
+							"nosniff"
+						],
+						"X-Frame-Options": [
+							"DENY"
+						],
+						"X-Xss-Protection": [
+							"0"
+						]
+					},
+					"templated": false
+				}
+			}
+		],
+		"globalActions": {
+			"delays": [],
+			"delaysLogNormal": []
+		}
+	},
+	"meta": {
+		"schemaVersion": "v5.1",
+		"hoverflyVersion": "v1.3.6",
+		"timeExported": "2023-01-01T23:17:11Z"
+	}
+}

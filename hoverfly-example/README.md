@@ -1,4 +1,4 @@
-# This service is an example for Hoverfly with Java implementation
+# This service is an example for Hoverfly with Spring webflux implementation
 
 ### Installation Instructions
 
@@ -35,6 +35,12 @@ Alternatively, you can run docker instance
 docker run -d -p 8888:8888 -p 8500:8500 spectolabs/hoverfly:latest
 ```
 
+This app serves as a demo for Hoverfly
+
+An order processing service that exposes a POST /order endpoint with the list of items to order along with the shipment postcode. This ordering service interacts with the dependent driver service in order to retrieve the driver details based on the postcode (using GET driver/{postCode})
+
+![HoverflyExampleFlow](./Hoverfly example.jpg?title=Hoverfly)
+
 ### How to Run the App in local ?
 
 This app uses maven as a build tool and hence the app can be started by below command
@@ -42,4 +48,7 @@ This app uses maven as a build tool and hence the app can be started by below co
 ```
 mvn spring-boot:run
 ```
+
+Please refer to the tests #ProxyServerOrderControllerTest and #WebServerOrderControllerTest which runs hoverfly as proxy and web server 
+
 

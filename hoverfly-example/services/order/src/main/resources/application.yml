@@ -1,6 +1,9 @@
 server:
   port: 8080
 
+  ssl:
+    enabled: false
+
 driver:
   service:
     uri: http://localhost:8080/driver/
@@ -9,4 +12,4 @@ driver:
 hoverfly:
   enabled: true
   hostname: localhost
-  port: 8500
+  port: 8501

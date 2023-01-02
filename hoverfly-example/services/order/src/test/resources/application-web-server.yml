@@ -1,0 +1,16 @@
+server:
+  port: 8082
+  ssl:
+    enabled: false
+
+driver:
+  service:
+    uri: http://localhost:8501/driver/  # While running as web server,
+                                        # hoverfly server needs to be pointed directly
+                                        # as opposed to pointing to the app running port (8082)
+
+
+hoverfly:
+  enabled: true
+  hostname: localhost
+  port: 8501
